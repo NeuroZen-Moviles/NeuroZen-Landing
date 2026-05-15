@@ -1,7 +1,7 @@
 ---
 import Section from "../components/Section.astro";
-import Link from "../ui/Link.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import gPlayButtonImage from "@/assets/images/gplaybutton.png";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -26,10 +26,12 @@ const t = useTranslations(lang);
     <p class="text-white text-lg font-medium">
       {t("hero.cta.text")}
     </p>
-    <Link
-      href="https://neurozen-frontend.web.app"
-      text={t("hero.cta.button")}
-      styles="border-2 border-white px-6 py-3"
-    />
+    <a href="#">
+      <img
+        src={gPlayButtonImage.src}
+        alt="Goggle Play Button"
+        class="px-6 py-3 cursor-pointer object-fill w-80"
+      />
+    </a>
   </div>
 </Section>
