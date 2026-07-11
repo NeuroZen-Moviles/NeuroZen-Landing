@@ -22,23 +22,21 @@ const t = useTranslations(lang);
   title={t("about.title")}
   description={t("about.description")}
 >
-  <div class="flex-col gap-10 items-center xl:flex">
+  <div class="flex flex-col lg:flex-row gap-10 items-center">
     <Video
       title={t("about.team.title")}
       description={t("about.team.description")}
       srcLink={aboutTheTeamVideo}
     />
-    <div class="flex-col gap-10 xl:flex">
-      <Video
-        title={t("about.product.android.title")}
-        description={t("about.product.description")}
-        srcLink={aboutTheProductAndroidVideo}
-      />
-      <Video
-        title={t("about.product.flutter.title")}
-        description={t("about.product.description")}
-        srcLink={aboutTheProductFlutterVideo}
-      />
-    </div>
+    <Video
+      title={t("about.product.android.title")}
+      description={t("about.product.description")}
+      srcLink={aboutTheProductAndroidVideo}
+    />
+    <Video
+      title={t("about.product.flutter.title")}
+      description={t("about.product.description")}
+      srcLink={aboutTheProductFlutterVideo}
+    />
   </div>
 </Section>
