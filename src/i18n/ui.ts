@@ -85,7 +85,8 @@ export const ui = {
     "about.team.title": "Nuestro Equipo",
     "about.team.description":
       "Conoce a las personas que hacen posible NeuroZen",
-    "about.product.title": "Nuestro Producto",
+    "about.product.android.title": "Nuestro Producto (Android)",
+    "about.product.flutter.title": "Nuestro Producto (Flutter)",
     "about.product.description":
       "Descubre cómo funciona NeuroZen y sus características",
 
@@ -234,7 +235,8 @@ export const ui = {
       "Learn more about NeuroZen and the team behind the platform",
     "about.team.title": "Our Team",
     "about.team.description": "Meet the people who make NeuroZen possible",
-    "about.product.title": "Our Product",
+    "about.product.android.title": "Our Product (Android)",
+    "about.product.flutter.title": "Our Product (Flutter)",
     "about.product.description": "Discover how NeuroZen works and its features",
 
     "comments.title": "What our users say",
