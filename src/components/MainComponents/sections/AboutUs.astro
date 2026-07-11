@@ -5,10 +5,13 @@ import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 import Video from "../components/Video.astro";
 
 const aboutTheTeamVideo =
-  "https://drive.google.com/file/d/1AsHxJ_o9XktLwfX1jvPffU_DcaPWIKiE/preview";
+  "https://drive.google.com/file/d/16jMDioUhBDkHK5oRhv3hPGo_qzby2eX6/preview";
 
-const aboutTheProductVideo =
-  "https://drive.google.com/file/d/1XRbIPGsCtUU8FICERQq0OZMhL1kUx97u/preview";
+const aboutTheProductAndroidVideo =
+  "https://drive.google.com/file/d/1-_v0KUTrHYfdEqTVUWcZBBUHyfarLtC4/preview";
+
+const aboutTheProductFlutterVideo =
+  "https://drive.google.com/file/d/1WmfQlVR6qOvY7nmcW1z558q4jJ54ccLg/preview";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -19,16 +22,23 @@ const t = useTranslations(lang);
   title={t("about.title")}
   description={t("about.description")}
 >
-  <div class="flex gap-10">
+  <div class="flex-col gap-10 items-center xl:flex">
     <Video
       title={t("about.team.title")}
       description={t("about.team.description")}
-      srcLink={aboutTheProductVideo}
-    />
-    <Video
-      title={t("about.product.title")}
-      description={t("about.product.description")}
       srcLink={aboutTheTeamVideo}
     />
+    <div class="flex-col gap-10 xl:flex">
+      <Video
+        title={t("about.product.android.title")}
+        description={t("about.product.description")}
+        srcLink={aboutTheProductAndroidVideo}
+      />
+      <Video
+        title={t("about.product.flutter.title")}
+        description={t("about.product.description")}
+        srcLink={aboutTheProductFlutterVideo}
+      />
+    </div>
   </div>
 </Section>
