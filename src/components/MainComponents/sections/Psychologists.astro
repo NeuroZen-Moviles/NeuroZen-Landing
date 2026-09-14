@@ -3,11 +3,12 @@ import Section from "../components/Section.astro";
 import Psychologist from "../components/Psychologist.astro";
 import { psychologists } from "@/consts/psychologists";
 import Link from "../ui/Link.astro";
+import { pendingActionUrl } from "@/consts/links";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const bookSessionUrl = "https://playgooglecomneurozen.netlify.app";
+const bookSessionUrl = pendingActionUrl;
 ---
 
 <Section

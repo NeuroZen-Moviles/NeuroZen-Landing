@@ -1,5 +1,6 @@
 ---
 import Link from "../ui/Link.astro";
+import { pendingActionUrl } from "@/consts/links";
 
 interface Props {
   name: string;
@@ -11,7 +12,7 @@ interface Props {
 
 const { features, name, price, subtitle, isAdvanced } = Astro.props;
 
-const purchaseUrl = "https://playgooglecomneurozen.netlify.app";
+const purchaseUrl = pendingActionUrl;
 ---
 
 <div

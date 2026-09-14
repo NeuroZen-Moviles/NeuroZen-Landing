@@ -2,6 +2,7 @@
 import type { Psychologist } from "@/types/psychologist";
 import { formatPsychologistName } from "@/helpers/formatPsychologistName";
 import Link from "../ui/Link.astro";
+import { pendingActionUrl } from "@/consts/links";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
 interface Props {
@@ -17,7 +18,7 @@ const psychologistName = formatPsychologistName(psychologist);
 const imageAlt = `Foto ${psychologistName}`;
 const isEven = index % 2 === 0;
 
-const bookSessionUrl = "https://playgooglecomneurozen.netlify.app";
+const bookSessionUrl = pendingActionUrl;
 ---
 
 <article
